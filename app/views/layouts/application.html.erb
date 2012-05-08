@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Annaco Investments</title>
+    <%= stylesheet_link_tag    "application", 'reset', 'style', 'grid', 'menu-style' %>
+    <%= javascript_include_tag  "application", 'cufon-yui', 'cufon-replace',  'superfish', 'script', 'jcarousellite_1.0.1', 'easyTooltip', 'FF-cash' %>
+    <%= csrf_meta_tags %>
+    <script>
+		$(document).ready(function() {			
+			$(".jCarouselLite-2").jCarouselLite({
+				  btnNext: "._next",
+				  btnPrev: "._prev",
+				  auto: 6000,
+		  
+				  speed: 300,
+				  easing: 'easeInQuad',
+		  
+				  vertical: false,
+				  circular: true,
+				  visible: 5,
+				  start: 0,
+				  scroll: 1
+			  });
+		});
+	</script>   
+	<!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/assets/upgrade.jpg" border="0"  alt="" /></a>
+        </div>
+	<![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+	<![endif]-->
+</head>
+
+<!--==============================header=================================-->
+    <header>
+    	<div class="bg">
+        	<div class="main">
+                <div class="container_24">
+                	<div class="wrapper">
+                    	<div class="grid_24 alpha">
+                        	<div class="wrapper border-bot">
+                            	<div class="grid_11 alpha">
+                                    <h1>
+                                         <a class="logo" href="index.html"><%= image_tag 'logo.png'%></a>
+
+                                     </h1>
+                                </div>
+                                <div class="grid_13 omega">
+                                	<div class="wrapper">
+                                    	<ul class="register-list">
+                                            <li class="first">406.442.2400</li>
+                                            <li class="clear_spacer">Fax: 406.442.1230</li>
+                                      </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_24 alpha omega index">
+                    	<nav>
+                            <ul class="menu">
+                                <%= render :partial => 'nav'%>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="slider-wrapper">
+                        <div id="slider" class="nivoSlider">
+                            <img src="/assets/slider-img1.jpg" alt="" title="#htmlcaption1" />
+                            <img src="/assets/slider-img2.jpg" alt="" title="#htmlcaption2" />
+                            <img src="/assets/slider-img3.jpg" alt="" title="#htmlcaption3" />
+                        </div>
+                        <div id="htmlcaption1" class="nivo-html-caption">
+                            Let’s create<br> your growth strategy <strong>together!</strong>
+                        </div>
+                        <div id="htmlcaption2" class="nivo-html-caption">
+                            Well being<br>of our clients  <strong>first!</strong>
+                        </div>
+                        <div id="htmlcaption3" class="nivo-html-caption">
+                            We know<br>how to solve your  <strong>problems!</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </header>
+
+<body id="page2">
+
+<section id="content">
+  <%= yield %>
+</section>
+
+<!--==============================footer=================================-->
+    <footer>
+        <div class="main">
+        	<div class="container_24">
+            	<div class="wrapper">
+                	<div class="grid_12">
+                    	Annaco Investment Management &copy; <%= Time.now.strftime("%Y")%> <br>
+                    </div>
+                    <div class="grid_12">
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
+

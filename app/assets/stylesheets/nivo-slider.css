@@ -1,0 +1,137 @@
+/*
+ * jQuery Nivo Slider v2.5.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:15px;
+	bottom:11px;
+	background:url(/assets/slider-caption.png) 0 0 repeat;
+	color:#fff;
+	opacity:1; /* Overridden by captionOpacity setting */
+	z-index:8;
+	width:282px;
+	min-height:200px;
+}
+.nivo-caption p {
+	font-size:26px;
+	line-height:1.2em;
+	padding:20px 15px 28px 28px;
+	margin:0;
+}
+	.nivo-caption p strong {
+		display:block;
+		text-transform:uppercase;
+	}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+
+#slider-wrapper {
+    background:url(/assets/slider-bg.png) 0 0 no-repeat;
+    width:930px;
+    height:250px;
+    margin-top:3px;
+    padding:10px;
+	position:relative;
+	z-index:1;
+}
+
+#slider {
+	position:relative;
+    width:940px;
+    height:200px;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:30px;
+	bottom:41px;
+	width:70px;
+	height:27px;
+	background:#000;
+	padding:10px 0 0 9px;
+	z-index:99;
+}
+.nivo-controlNav a {
+	display:block;
+	width:18px;
+	height:18px;
+	background:url(/assets/slider-control.png) left top no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:4px;
+	float:left;
+}
+.nivo-controlNav a.active, .nivo-controlNav a:hover {
+	background-position:left bottom;
+}
+.nivo-caption {
+    text-shadow:none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}

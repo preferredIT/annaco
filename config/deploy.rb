@@ -4,7 +4,6 @@
 
 set :application, "annacoim.com"
 set :user, "internetchris"
-set :port, 31979
 set :use_sudo, true
 set :deploy_to, "/home/internetchris/public_html/#{application}"
 set :keep_releases, 3
@@ -14,7 +13,7 @@ set :keep_releases, 3
 #############################################################
 
 default_run_options[:pty] = true
-set :repository, "git@github.com:preferredit/annaco.git"
+set :repository, "git@github.com:preferredIT/annaco.git"
 set :scm, "git"
 
 #############################################################

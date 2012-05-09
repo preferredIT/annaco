@@ -508,3 +508,15 @@ footer {
 	position:relative;
 	z-index:9;
 }
+
+#contact_people{
+	float:right;
+	margin-right: 150px;
+	background: #404040;
+	padding: 10px;
+}
+
+
+#contact_people a{
+	color: #fff
+}

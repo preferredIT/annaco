@@ -49,6 +49,8 @@ Annaco::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
    root :to => 'main#index'
+   match 'about' => 'main#about'
+   match 'contact' => 'main#contact'
 
   # See how all your routes lay out with "rake routes"
 

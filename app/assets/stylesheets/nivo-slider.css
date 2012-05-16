@@ -49,7 +49,6 @@
 	position:absolute;
 	left:15px;
 	bottom:11px;
-	background:url(/assets/slider-caption.png) 0 0 repeat;
 	color:#fff;
 	opacity:1; /* Overridden by captionOpacity setting */
 	z-index:8;

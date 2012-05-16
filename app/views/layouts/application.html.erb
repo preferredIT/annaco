@@ -1,37 +1,16 @@
 
 <!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
 <html lang="en">
 <head>
     <title>Annaco Investment Management</title>
-    <%= stylesheet_link_tag    "application", 'reset', 'style', 'grid', 'menu-style' %>
+    <%= stylesheet_link_tag    "application", 'reset', 'grid', 'menu-style','style' %>
     <%= javascript_include_tag  "application","jquery.easing.1.3", "jquery.nivo.slider", 'cufon-yui', 'cufon-replace',  'superfish', 'script', 'jcarousellite_1.0.1', 'easyTooltip', 'FF-cash' %>
     <%= csrf_meta_tags %>
-    <script>
-		$(document).ready(function() {			
-			$(".jCarouselLite-2").jCarouselLite({
-				  btnNext: "._next",
-				  btnPrev: "._prev",
-				  auto: 6000,
-		  
-				  speed: 300,
-				  easing: 'easeInQuad',
-		  
-				  vertical: false,
-				  circular: true,
-				  visible: 5,
-				  start: 0,
-				  scroll: 1
-			  });
-		});
-	</script>   
-	<!--[if lt IE 8]>
-        <div style=' clear: both; text-align:center; position: relative;'>
-            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/assets/upgrade.jpg" border="0"  alt="" /></a>
-        </div>
-	<![endif]-->
+   
     <!--[if lt IE 9]>
-   		<script type="text/javascript" src="js/html5.js"></script>
-        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+   		<script type="text/javascript" src="/assets/html5.js"></script>
+        <link rel="stylesheet" href="/assets/ie.css" type="text/css" media="screen">
 	<![endif]-->
 </head>
 
@@ -45,7 +24,7 @@
                         	<div class="wrapper border-bot">
                             	<div class="grid_11 alpha">
                                     <h1>
-                                         <a class="logo" href="index.html"><%= image_tag 'logo.png'%></a>
+                                         <a class="logo" href="index.html"><%= image_tag 'logo2.png'%></a>
 
                                      </h1>
                                 </div>
@@ -75,22 +54,14 @@
                             <img src="/assets/slider-img2.jpg" alt="" title="#htmlcaption2" />
                             <img src="/assets/slider-img3.jpg" alt="" title="#htmlcaption3" />
                         </div>
-                        <div id="htmlcaption1" class="nivo-html-caption">
-                            Let’s create<br> your growth strategy <strong>together!</strong>
-                        </div>
-                        <div id="htmlcaption2" class="nivo-html-caption">
-                            Well being<br>of our clients  <strong>first!</strong>
-                        </div>
-                        <div id="htmlcaption3" class="nivo-html-caption">
-                            We know<br>how to solve your  <strong>problems!</strong>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>     
     </header>
 
-<body id="page2">
+<body>
 
 <section id="content">
   <%= yield %>
@@ -102,16 +73,41 @@
         	<div class="container_24">
             	<div class="wrapper">
                 	<div class="grid_12">
-                    	Annaco Investment Management &copy; <%= Time.now.strftime("%Y")%> <br>
-                    </div>
-                    <div class="grid_12">
-                    	
-                    </div>
+                    	Annaco Investment Management &copy; <%= Time.now.strftime("%Y")%> <br/>
+                  </div>
+                  
+                  
+    
+                    	<div class='disclaimer'>
+                    	  <p>
+                        AnnaCo Investment Management, Inc. (AnnaCo) is a state-registered investment adviser located in Helena, Montana. AnnaCo and its representatives are in compliance with the current registration requirements applicable in those states in which AnnaCo maintains clients. AnnaCo may only transact business in those states in which it is registered or qualifies for an exemption or exclusion from registration requirements. For information pertaining to the registration status of AnnaCo, please contact our office or your state’s securities law administrator. Although we may not currently be registered in your state, we may seek registration in your state if warranted.
+                        </p>
+                      </div>
+                
                 </div>
             </div>
         </div>
+        
     </footer>
-	<script type="text/javascript"> Cufon.now(); </script>
+	
 </body>
 </html>
 
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect: 'fade',
+			slices: 15,
+			boxCols: 8,
+			boxRows: 4,
+			animSpeed: 500,
+			pauseTime: 7000,
+			startSlide: 0,
+			directionNav: false,
+			directionNavHide: false,
+			controlNav: false,
+			keyboardNav: false,
+			pauseOnHover: true,
+		});
+	});
+ </script>

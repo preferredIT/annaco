@@ -489,6 +489,7 @@ strong.circle {
 footer {
 	width:100%; 
 	padding:27px 0 30px;
+	background:url(/assets/footer-tail.gif) 0 0 repeat-x;
 	color:#fff;
 }
 	footer .main {font-size:14px;}

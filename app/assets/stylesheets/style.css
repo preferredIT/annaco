@@ -5,20 +5,17 @@ mark, rp, rt, ruby, summary, time {display:inline;}
 /* Global properties ======================================================== */
 html {width:100%;}
 
+
 body { 	 
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:100%; 
 	color:#b3b3b3;
 	min-width:1014px;
-	background:url(/assets/body-tail.gif) 0 0 repeat;
+	background-color: #ababac;
+  background:url(/assets/header-tail2.gif) 0 0 repeat-x;
 }
 
-.bg {
-	width:950px; 
-	padding:25px 32px 2px;
-	margin:0 auto;
-	background:#767676
-}
+
 #page1 .bg {padding:25px 32px 14px;}
 .bg-2 {
 	width:100%;
@@ -112,13 +109,28 @@ header {
 	width:100%;
 	background:url(/assets/header-tail2.gif) 0 0 repeat-x;
 	position:relative; 
-	z-index:4;
+	z-index:99;
 	
 }
 	#page1 header {
 		height:667px;
 		background:url(/assets/header-tail.gif) 0 0 repeat-x;
 	}
+	
+	
+.bg {
+		width:950px; 
+		padding:25px 32px 2px;
+		margin:0 auto;
+		background:#767676;
+		margin-bottom: -200px;
+		margin-top: 30px;
+		height: 395px;
+		position: relative;
+		z-index: 4;
+
+	}
+
 
 h1 {
 	padding:0px 0 0 0; 
